@@ -101,6 +101,3 @@ Le fichier **database.sql** contient la structure de la base de données :
 * trajets
 * reservations
 
-## Auteur
-
-Projet réalisé par **Bon Berry Bahire** dans le cadre du développement d'une plateforme de covoiturage.
