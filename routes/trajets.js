@@ -54,3 +54,4 @@ router.delete('/:id', auth, (req, res) => {
 });
 
 module.exports = router;
+// TODO: ajouter validation des trajets
