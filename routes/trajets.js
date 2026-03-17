@@ -55,3 +55,11 @@ router.delete('/:id', auth, (req, res) => {
 
 module.exports = router;
 // TODO: ajouter validation des trajets
+// Validation des données pour créer un trajet
+if (!req.body.depart || !req.body.arrivee || !req.body.date) {
+  return res.status(400).json({ message: "Champs obligatoires manquants" });
+}
+
+if (req.body.places <= 0) {
+  return res.status(400).json({ message: "Nombre de places invalide" });
+}
